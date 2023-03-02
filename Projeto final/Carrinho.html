@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./Css/Main.css">
+        <title>Super Store : Carrinho de Compras</title>
+    </head>
+    <body>
+        <div id="homet">
+            <div id="logo">
+                <a href="./Home.html"><img id="logoi" src="./Imgs/LogoWhite.png" alt="Logo"></a>
+            </div>
+            <div class="pesquisa">
+                <button class="bt-pesquisa"><img src="./Imgs/Bt.png" id="f-pesquisa"></button>
+                <input type="text" class="in-pesquisa" placeholder="Pesquise aqui..">
+            </div>
+            <div id="InMenu">
+                <a href=""><img class="icon" src="./Imgs/Carrinho.png" alt="Carrinho"></a>
+                <div id="MenuNav">
+                    <input type="checkbox" id="checkM">
+                    <label id="MenuP" for="checkM">
+                        <img class="icon" src="./Imgs/Perfil.png" alt="Perfil">
+                    </label>
+                    <nav>
+                        <ul id="MenuL">
+                            <li class="LinkC"><a class="IconM" href="./Login.html">Sobre Minha Conta</a></li>
+                            <li class="LinkC"><a class="IconM" href="">Notificações</a></li>
+                            <li class="LinkC"><a class="IconM" href="">Meus Pedidos</a></li>
+                            <li class="LinkC"><a class="IconM" href="">Meus Favoritos</a></li>
+                            <li class="LinkC"><a class="IconM" href="">Ajuda</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="Categorias">
+            <a class="LinkCategoria" href="">Mais Vendidos</a>
+            <a class="LinkCategoria" href="">Ofertas Black Friday</a>
+            <a class="LinkCategoria" href="">Cosplays</a>
+            <a class="LinkCategoria" href="">Action Figures</a>
+            <a class="LinkCategoria" href="">HQs</a>
+        </div>
+        <div id="CompraCarrinho">
+            <div id="CarrinhoCompras">
+                <div class="ProdutoCar">
+                    <img class="ImgProdCar" href="./Batman.html" src="./Imgs/Bat1.jpg">
+                    <div class="OrgProdCar">
+                    <span class="NomeProdCar">Action Figure Batman Death Metal</span>
+                        <div class="DivisaoCar">
+                            <div class="QuantProdCar">
+                                <form action="" method="post">
+                                    <label for="quant" id="quantit">Quantidade:</label>
+                                    <select id="quant">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="RemProdCar">Remover</div>
+                        </div>
+                    </div>
+                    <div class="PrecoCar">
+                        <p class="PrecoCarText">R$ 359,00</p>
+                    </div>
+                </div>
+                <div class="ProdutoCar">
+                    <img class="ImgProdCar" href="./Rick.html" src="./Imgs/Rick1.png">
+                    <div class="OrgProdCar">
+                    <span class="NomeProdCar">Chaveiro Funko Rick</span>
+                        <div class="DivisaoCar">
+                            <div class="QuantProdCar">
+                                <form action="" method="post">
+                                    <label for="quant" id="quantit">Quantidade:</label>
+                                    <select id="quant">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="RemProdCar">Remover</div>
+                        </div>
+                    </div>
+                    <div class="PrecoCar">
+                        <p class="PrecoCarText">R$ 54,90</p>
+                    </div>
+                </div>
+                <div class="ProdutoCar">
+                    <img class="ImgProdCar" href="./Spidey.html" src="./Imgs/Spidey1.jpg">
+                    <div class="OrgProdCar">
+                    <span class="NomeProdCar">Moletom Miles Morales</span>
+                        <div class="DivisaoCar">
+                            <div class="QuantProdCar">
+                                <form action="" method="post">
+                                    <label for="quant" id="quantit">Quantidade:</label>
+                                    <select id="quant">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="RemProdCar">Remover</div>
+                        </div>
+                    </div>
+                    <div class="PrecoCar">
+                        <p class="PrecoCarText">R$ 119,97</p>
+                    </div>
+                </div>    
+            </div>
+             <div id="CarrinhoConfirmação">
+                <p id="TitConf">Resumo pedido</p>
+                <div id="ConfItens">
+                    <p class="ConfIten">Action Figure Batman Death Metal</p><p class="ConfPre">R$ 359,00</p>
+                    <p class="ConfIten">Chaveiro Funko Rick</p><p class="ConfPre">R$ 54,90</p>
+                    <p class="ConfIten">Moletom Miles Morales</p><p class="ConfPre">R$ 119,97</p>
+                </div>  
+                <div id="DivTot">
+                    <p class="TotCar">Total:</p><p class="TotCar">R$ 533,87</p>
+                </div>
+                <div id="BuyNowCar">
+                    <a href="" id="BuyCar">Continuar com a compra</a>
+                </div>
+                <div id="DescCar">
+                    <p id="DescCarText">Aceitamos os seguintes cartões:</p>
+                </div>
+                <div id="cartao">
+                    <img id="cartoes" src="./Imgs/cartoes.png" alt="Cartões disponíveis">
+                </div>
+            </div>
+        </div>
+        <div id="Rodape">
+            <div id="RodCont">
+                <div class="RodBox">
+                    <span class="TitContacts"><p class="ConfTit">Conheça-nos</p></span>
+                    <div class="ContItens"><a class="ContInf" href="./Sobre.html">Informações corporativas</a></div>
+                    <div class="ContItens"><a class="ContInf" href="./Sobre.html">Carreira</a></div>
+                    <div class="ContItens"><a class="ContInf" href="./Sobre.html">Trabalhe conosco</a></div>
+                </div>
+                <div class="RodBox">
+                    <span class="TitContacts"><p class="ConfTit">Ajuda e suporte</p></span>
+                    <div class="ContItens"><a class="ContInf" href="./Login.html">Minha conta</a></div>
+                    <div class="ContItens"><a class="ContInf" href="">Frete e prazo de entrega</a></div>
+                    <div class="ContItens"><a class="ContInf" href="">Acessibilidade</a></div>
+                    <div class="ContItens"><a class="ContInf" href="">Contato</a></div>
+                </div>
+                <div class="RodBox">
+                    <span class="TitContacts"><p class="ConfTit">Redes Sociais</p></span>
+                    <div class="ContItens"><a class="ContInf" href="">Facebook</a></div>
+                    <div class="ContItens"><a class="ContInf" href="">Instagram</a></div>
+                    <div class="ContItens"><a class="ContInf" href="">Twitter</a></div>
+                    <div class="ContItens"><a class="ContInf" href="">Tiktok</a></div>
+                </div>
+            </div>
+            <div id="RodInf">
+                <span class="InfBox"><p class="InfConf">© 2022 Todos os direitos reservados Super Store</p></span>
+                <span class="InfBox"><p class="InfConf">CNPJ: 00.000.000/0000-00 | Avenida - São Paulo CEP: 0000-000| <a id="LinkEmail" href="">Fale conosco</a> | ajuda-super@store.com.br</p></span>
+                <span class="InfBox"><p class="InfConf">Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix.</p></span>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,945 @@
+html{
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: linear-gradient(to bottom, #757575, #303030);
+}
+
+#homet {
+    background-color: #101010;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#logoi {
+    width: 175px;
+    height: 70px;
+    padding: 0px 5px 0px 5px;
+}
+
+.pesquisa {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    align-self: center;
+}
+
+#f-pesquisa {
+    width: 30px;
+    height: 30px;
+}
+
+.in-pesquisa {
+    height: 25px;
+    width: 150px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    padding-right: 40px;
+    color: white;
+    margin: 0px 5px;
+}
+
+.in-pesquisa::placeholder{
+    color: grey;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.bt-pesquisa {
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    position: absolute;
+    right: 5px;
+    color: white;
+    background-color: transparent;
+    pointer-events: painted;
+    display: flex;
+    align-items: center;
+}
+
+.bt-pesquisa:focus ~ .in-pesquisa {
+    width: 500px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.in-pesquisa:focus {
+    width: 500px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+
+}
+
+#InMenu {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: row ;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    padding: 5px 5px 0px 5px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+nav {
+    background-color: #101010;
+    width: 350px;
+    top: 74px;
+    right: -370px;
+    position: absolute;
+    transition: all .5s;
+}
+
+.IconM {
+    color: white;
+    display: block;
+    padding: 20px 5px;
+}
+
+.IconM:hover{
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+#MenuL {
+    list-style: none;
+    padding-inline-start: 0px;
+    margin: 0px;
+}
+
+#MenuP {
+    z-index: 1;
+    background-color: #101010;
+}
+
+input[type="checkbox"]:checked ~ nav {
+    transform: translateX(-360px);
+}
+
+.LinkC {
+    text-align: right;
+    padding: 5px;
+}
+
+.LinkC:hover {
+    background-color: black;
+}
+
+#Categorias {
+    background-color: #242424;
+    height: 37px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.LinkCategoria {
+    color: white;
+    font-size: 20px;
+}
+
+.LinkCategoria:hover {
+    border-bottom: 1px solid white;
+}
+
+.SlideShow {
+    height: 420px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.SlideNav {
+    position: absolute;
+    bottom: 125px;
+    display: flex;
+    left: 40%;
+}
+
+.bar {
+    width: 80px;
+    height: 30px;
+    border: 2px solid white;
+    margin: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.bar:hover {
+    background-color: white;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.Slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.Slide {
+    transition: .6s;
+}
+
+#botao1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#botao2:checked ~ .s1 {
+    margin-left: -1325px;
+}
+
+#botao3:checked ~ .s1 {
+    margin-left: -2650px;
+}
+
+#CategorBar {
+    display: flex;
+    flex-direction: column;
+    background-color: #242424;
+    border: 15px solid #242424;
+    box-shadow: 2px 1px 10px 1px black;
+    justify-content: space-between;
+}
+
+.OpCat {
+    font-size: 25px;
+    color: white; 
+    margin-left: 20px;
+}
+
+#Cat {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.OpCat:hover {
+    border-bottom: 1px solid white;
+}
+
+#Itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 650px;
+    box-shadow: 11px 1px 10px 1px black;
+}
+
+.Item {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#PaiBody {
+    display: flex;
+}
+
+.ImgsItem {
+    width: 175px;
+    height: 175px;
+    border-radius: 25%;
+    transition: .5s;
+}
+
+.LinkItem {
+    background-color: #909090;
+    border-radius: 25%;
+    box-shadow: 0px 0px 10px 2px black;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 0px 20px;
+    transition: .3s;
+}
+
+.NameItem {
+    font-size: 20px;
+    margin: 10px 5px 5px 5px;
+    transition: .3s;
+}
+
+.Preço {
+    font-size: 25px;
+    margin: 0;
+    transition: .3s;
+}
+
+.LinkItem:hover {
+    width: 225px;
+    height: 225px;
+    transition: .3s;
+    margin: 0px 3px 0px 3px;
+}
+
+.LinkItem:hover .ImgsItem {
+    width: 200px;
+    height: 200px;
+    transition: .3s;
+}
+
+.LinkItem:hover .NameItem {
+    font-size: 25px;
+    transition: .3s;
+    margin: 0px;
+}
+
+.LinkItem:hover .Preço {
+    font-size: 30px;
+    transition: .3s;
+    margin: 0px;
+}
+
+#Rodape {
+    display: flex;
+    background-color: #101010;
+    width: 100%;
+    height: 350px;
+    flex-direction: column;
+}
+
+.InfConf {
+    color: #505050;
+    margin: 10px;
+}
+
+#LinkEmail {
+    color: #707070;
+}
+
+#LinkEmail:hover {
+    color: #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.ConfTit {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.ContInf {
+    color: white;
+}
+
+.ContInf:hover {
+    border-bottom: 1px solid white;
+}
+
+#RodCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#RodInf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.RodBox {
+    padding: 0px 15px;
+    width: 250px;
+}
+
+.ContItens {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.VendaNav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 55px;
+}
+
+.VenBar {
+    width: 80px;
+    height: 80px;
+    margin: 7px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.ItensVenda {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.ImgVendas {
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+}
+
+.Vendas {
+    display: flex;
+    height: 100%;
+}
+
+.VendaShow {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0px;
+    margin-left: 150px;
+}
+
+.Oferta {
+    transition: .6s;
+}
+
+#botao1:checked ~ .v1 {
+    margin-left: 0;
+}
+
+#botao2:checked ~ .v1 {
+    margin-left: -400px;
+}
+
+#botao3:checked ~ .v1 {
+    margin-left: -800px;
+}
+
+#OfertaBar {
+    display: flex;
+    gap: 100px;
+}
+
+#GrandeVenda {
+    display: flex;
+    flex-direction: column;
+}
+
+#star {
+    width: 150px;
+    height: 50px;
+}
+
+.TituloVenda {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 20px 0px 0px 0px;
+    color: white;
+}
+
+#avaliation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rate {
+    font-size: 23px;
+    margin: 10px 0px;
+}
+
+#PreçoV {
+    font-size: 45px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+#MiniPreço {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 3px 0px 0px 3px;
+}
+
+#DivPreço {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#DivFrete {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.Frete {
+    margin: 0;
+    font-size: 21px;
+}
+
+.parcela {
+    margin: 0;
+    font-size: 21px;
+    color: white;
+}
+
+#Estoque {
+    margin: 0;
+    font-size: 23px;
+    color: white;
+    padding-left: 200px;
+}
+
+#quantdiv {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+#quant {
+    border-radius: 8px;
+    height: 30px;
+    width: 35px;
+}
+
+#quantit {
+    font-size: 23px;
+}
+
+#Ad {
+    background-color: #808080;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+#BuyNow {
+    background-color: #242424;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+#buy1 {
+    color: white;
+    font-size: 25px;
+    padding: 16px 153px;
+}
+
+#buy2 {
+    color: white;
+    font-size: 25px;
+    padding: 16px 193px;
+}
+
+#Recomen {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+#Ofertas {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    margin: 0px 55px;
+}
+
+.ItemOf {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#OfTitDiv {
+    margin-left: 75px;
+}
+
+#OfTit {
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    border: none;
+    padding: 0;
+    font-weight: bold;
+}
+
+#Text {
+    display: flex;
+    flex-direction: column;
+}
+
+.TitDescText {
+    margin: 0;
+    font-size: 25px;
+    color: white;
+}
+
+.DescText {
+    margin: 2px;
+    font-size: 20px;
+    color: #909090;
+}
+
+.DivDesc {
+    margin: 5px 25px;
+}
+
+.duvidas {
+    width: 500px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#CompraCarrinho {
+    display: flex;
+    flex-direction: row;
+}
+
+#CarrinhoCompras {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+
+.ProdutoCar {
+    display: flex;
+    align-items: center;
+    background-color: #757575;
+    border: 5px;
+    border-radius: 20px;
+    margin: 5px 0px;
+}
+
+.ImgProdCar {
+    width: 125px;
+    height: 125px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.NomeProdCar {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.QuantProdCar {
+    display: inline-block;
+    margin: 15px 0px 15px 10px;
+    font-size: 35px;
+}
+
+form {
+    display: inline-block;
+}
+
+.OrgProdCar {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 125px;
+}
+
+.RemProdCar {
+    font-size: 23px;
+}
+
+.DivisaoCar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 250px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.RemProdCar:hover {
+    font-size: 23px;
+    color: white;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.PrecoCar {
+    display: flex;
+    background-color: #808080;
+    border: 5px;
+    border-radius: 20px;
+    height: 100%;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.PrecoCarText {
+    font-size: 35px;
+}
+
+#TitConf {
+    font-size: 35px;
+    color: white;
+    margin: 0;
+}
+
+.ConfIten {
+    font-size: 21px;
+    padding: 5px 0px;
+    margin: 0;
+}
+
+.ConfPre {
+    font-size: 21px;
+    padding: 5px 0px;
+    margin: 0;
+}
+
+#ConfItens {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 15px 10px 0px;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+#CarrinhoConfirmação {
+    background-color: #757575;
+    margin: 30px 0px;
+    padding: 5px;
+    border: 5px solid #757575;
+    border-radius: 10px;
+}
+
+.TotCar {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0px 15px 0px 0px;
+}
+
+#DivTot {
+    display: flex;
+    justify-content: space-between;
+}
+
+#BuyNowCar {
+    background-color: #242424;
+    border: 5px solid #242424;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin: 5px 0px;
+}
+
+#BuyCar {
+    color: white;
+    font-size: 25px;
+}
+
+#DescCar {
+    display: flex;
+}
+
+#DescCarText {
+    margin: 0;
+    font-size: 21px;
+}
+
+#cartoes {
+    width: 100%;
+    height: 150px;
+}
+
+#OsTres {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.TresInfs {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+}
+
+.TitSobre {
+    color: white;
+    font-size: 27px;
+    margin: 0;
+}
+
+.TextSobre {
+    color: #909090;
+    font-size: 25px;
+    margin: 5px;
+}
+
+#TitDesen {
+    color: white;
+    font-size: 27px;
+    margin: 0;
+    margin-left: 75px;
+}
+
+.DevImg {
+    width: 150px;
+    height: 150px;
+    border: #242424 1px solid;
+    box-shadow: 0px 0px 10px #101010;
+}
+
+#DesenvolvedorDivs {
+    display: flex;
+    margin: 10px 75px;
+    gap: 300px;
+}
+
+.Devs {
+    display: flex;
+    width: 450px;
+}
+
+.DevTit {
+    font-size: 25px;
+    color: white;
+    margin: 5px 10px;
+}
+
+.DevText {
+    font-size: 22px;
+    color: #909090;
+    margin: 5px 10px;
+}
+
+#Forms {
+    display: flex;
+    justify-content: center;
+}
+
+.LogReg {
+    display: flex;
+    flex-direction: column;
+    background-color: #757575;
+    width: 500px;
+    height: auto;
+    border: 10px solid #757575;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    margin: 50px;
+    align-items: center;
+}
+
+.LogReg form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ItensForm {
+    margin: 5px;
+    background-color: #909090;
+    border: 1px solid #909090;
+    border-radius: 5px;
+    font-size: 17px;
+    outline: none;
+    width: 250px;
+    height: 40px;
+}
+
+.ItensForm::placeholder {
+    color: #404040;
+}
+
+.ItensForm:focus {
+    border-bottom: 1px solid #404040;
+}
+
+#logoilogin {
+    width: 250px;
+    height: 110px;
+    padding: 10px;
+}
+
+form [type="submit"] {
+    background-color: #303030;
+    border: 1px solid #303030;
+    margin: 5px;
+    outline: none;
+    font-size: 17px;
+    color: white;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.TitLogReg {
+    font-size: 45px;
+    color: #303030;
+    margin: 5px;
+}
+
+.redesImg {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+#RedesOrg {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+#RedesOf {
+    margin: 5px;
+    font-size: 20px;
+    color: #242424;
+}
